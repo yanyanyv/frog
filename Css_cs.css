@@ -1,0 +1,101 @@
+* {/*消除默认css*//*px表示像素，vw\vh表示占页面的百分之几*/
+	padding: 0;
+	margin: 0;
+}
+header {
+	background-color: rgba(184, 253, 147,0.8);
+	height: 70px;/*高度*/
+	width: 100%;/*宽度（与屏幕同宽）*/
+	position: fixed;
+}
+h1 a{
+	color: rgb(239, 254, 239);
+	text-decoration: none;/*消除默认*/
+}
+header ul {
+	position: absolute;/*绝对模式*/
+	right: 10vw;/*右边缘*/
+	top:0;/*上边缘*/
+	line-height: 70px;/*行距，如果居中等同于页首高度*/
+}
+h1 {
+	position: absolute;
+	left: 80px;/*左边缘*/
+	top: 0;
+	line-height: 60px; 
+	background-image: url(images/青蛙底图log.svg);
+	background-repeat:no-repeat;/*只显示一个*/
+	background-position: center;/*居中*/
+	background-size: contain;/*比例*/
+	
+}
+header li {
+	display: inline;/*改为横向排版*/
+	margin-right: 4vw;/*右边距为4vw*/
+	font-size: 20px;
+}
+header ul a {
+	color: rgb(12, 59, 12);
+	text-decoration: none;/*消除默认格式*/
+}
+header ul a:hover {
+	text-decoration: underline;/* 让鼠标悬停时有底线 */
+}
+.dazi {
+	background-color: rgb(220, 253, 187);
+	color: aliceblue;
+	height: 1000px;
+	background-image: url(images/青蛙主页大图.png);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	border-radius: 20px;
+	flex-direction: column;/*栏样式*/
+	align-items: center;/*水平对齐：中央*/
+	justify-content: center;/*垂直对齐：中央*/
+}
+.dazi h2{
+	font-size: 60px;
+}
+.dazi p {
+	color: rgb(234, 247, 234);
+	font-size: 18px;
+	margin: 20px 0;/*上下边距*/
+}
+.dazi a {
+	color: greenyellow;
+	text-decoration: none;/*去除自带下划线*/
+	border: 1px solid #e9f1e7;/*加个边框*/
+	padding: 5px 10px;/*加内边距*/
+	border-radius: 5px;/*边框变成圆角*/
+}
+.meitu {
+	background-color: rgb(220, 253, 187);
+	color: rgba(234, 247, 234,0.8);
+	height: 1600px;
+	background-image: url(images/多照片底图.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	border-radius: 30px;
+	justify-content: center;
+	margin-top: 35px;
+	font-size: 200px;
+	line-height: 2.9;
+}
+footer {
+	background-color: rgb(77, 137, 13);
+	color: rgba(234, 247, 234,0.8);
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 12px;
+	font-size: 15px;
+	line-height: 1.8em;
+}
+    
+
+
